@@ -81,7 +81,8 @@ body { background-color: black;}
 
 .center-title {
     font-family: 'Nesathoberyl-BW9j3', sans-serif;
-    color:azure;
+    color: azure;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     /* mix-blend-mode: difference;  */
     font-size: 6vw;
     position: fixed;
