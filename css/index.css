@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'Nesathoberyl-BW9j3';
+    src: url('../fonts/Nesathoberyl-BW9j3.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#main {width: 100%; padding:0;}
+
+.content-asset p {margin:0 auto;}
+
+.breadcrumb {display:none;}
+
+
+/* Style for the full-link anchor tag */
+.full-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 20; /* Ensure the link is above other content */
+}
+
+.parallax {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; /* Center the background image */
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    perspective: 1000px; /* Set the perspective depth */
+}
+
+.parallax.one {
+    background-image: url(../images/london.jpg);
+    background-position: center 100%;
+}
+
+.parallax.two {
+    background-image: url(../images/dubai.jpg);
+}
+
+.parallax:hover {
+    cursor:crosshair;
+ 
+}
+
+.parallax img {
+    transition: transform 0.5s ease-in-out; /* Smooth transition for the image */
+}
+
+.parallax:hover img {
+    transform: scale(1.1); /* Zoom in on hover */
+}
+
+.berylimg {
+    width: 90vw;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.number {
+    font-family: 'Orbitron';
+    font-weight: 500;
+    font-style: normal;
+    position:absolute;
+    top: 15px;
+    left: 20px;
+    font-size: 2em;
+}
+
+body { background-color: black;}
+
+.center-title {
+    font-family: 'Nesathoberyl-BW9j3', sans-serif;
+    color:azure;
+    /* mix-blend-mode: difference;  */
+    font-size: 6vw;
+    position: fixed;
+    top: 50%; /* Position from the top edge */
+    left: 50%; /* Position from the left edge */
+    transform: translate(-50%, -50%); /* Center horizontally and vertically */
+    text-align: center;
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.muted {
+    color: rgba(232, 219, 219, 0.8);
+}
+
+footer {
+    height:80px;
+}
+
