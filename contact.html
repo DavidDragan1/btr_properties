@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    /* General Styles */
+    .u-text-1 {
+      text-transform: uppercase;
+      letter-spacing: 4px;
+    }
+
+    .u-text-2 {
+      font-family: 'Playfair Display', serif;
+      color: #bc987e;
+    }
+
+    .u-body {
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: Roboto, sans-serif;
+    }
+
+    /* Contact Form Container */
+    .contact-form-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: rgba(0, 0, 0, 0);
+    }
+
+    /* Contact Form */
+    .contact-form {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      max-width: 500px;
+      width: 100%;
+    }
+
+    .contact-form h3 {
+      font-family: 'Roboto', sans-serif;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .contact-form .w3-input,
+    .contact-form .w3-check {
+      margin-bottom: 15px;
+    }
+
+    .contact-info {
+      margin-bottom: 20px;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    .contact-info p {
+      margin: 5px 0;
+    }
+
+    .contact-info .u-text-2 {
+      color: #bc987e;
+    }
+
+    .submit {
+      background-color: #bc987e!important;
+      font-family: 'Playfair Display', serif;
+      font-weight: 500;
+      color:black;
+    }
+
+    .dim {
+      color: #8f8f8f;
+    }
+
+    /* Background Image */
+    .body-img {
+      background-image: url('images/l13.jpg'); /* Replace with your image URL */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 100vh;
+      overflow-x: hidden; /* Prevent horizontal scrolling */
+    }
+
+    /* Media Queries for Responsive Design */
+    @media only screen and (max-width: 600px) {
+      .contact-form-container {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body class="u-body body-img">
+
+<div class="contact-form-container w3-display-container">
+  <div class="contact-form w3-card-4 w3-animate-opacity">
+    <h3 class="u-text-1">Contact Us</h3>
+    <p class="dim">Submit an enquiry using the form below and we will endeavor to get back to you as soon as possible</p>
+    <hr>
+    <div class="contact-info">
+      <p>Address: 135 Shooters Hill, London, SE18 3SA</p>
+      <p>Email: <a class="u-text-2" href="mailto:CHANGEEMAIL@EMAIL.COM"><span>info@btrproperties.com</span></a></p>
+      <p>Phone: <a class="u-text-2" href="tel:+447985107830"><span>+44 7985 107 830</span></a></p>
+    </div>
+    <hr>
+    <!-- CHANGE EMAIL -->
+    <form action="https://formsubmit.co/CHANGEEMAIL" class="w3-container">
+      <label>Name</label>
+      <input class="w3-input" type="text" name="name" required>
+      
+      <label>Email Address</label>
+      <input class="w3-input" type="email" name="email" required>
+      
+      <label>Phone Number</label>
+      <input class="w3-input" type="tel" name="phone" required>
+      
+      <label>
+        <input class="w3-check" type="checkbox" name="callback"> Request a call back
+      </label>
+      <hr>
+      
+      <label>Message</label>
+      <textarea class="w3-input" name="message" rows="4" required></textarea>
+      
+      <button class="w3-button w3-block w3-round-xxlarge w3-margin-top submit" type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+
+</body>
+</html>
