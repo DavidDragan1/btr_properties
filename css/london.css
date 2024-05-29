@@ -41,7 +41,7 @@
   z-index: 5;
 }
 
-.slider {
+.slider, .slider2, .slider3 {
   overflow: hidden;
   position: relative;
   width: 100%;
@@ -51,16 +51,16 @@
   background-color: black;
 }
 
-.slides {
+.slides, .slides2, .slides3  {
   display: flex;
   transition: transform 0.5s ease-in-out;
 }
-.slide {
+.slide, .slide2, .slide3  {
   min-width: 100%;
   box-sizing: border-box;
   position: relative;
 }
-.slide img {
+.slide img, .slide2 img, .slide3 img {
   width: 100%;
   margin:0;
 }

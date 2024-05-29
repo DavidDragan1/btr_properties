@@ -55,27 +55,15 @@
     transition: transform 0.5s ease-in-out; /* Smooth transition for the image */
 }
 
-.parallax:hover img {
-    transform: scale(1.1); /* Zoom in on hover */
-}
 
 .berylimg {
-    width: 90vw;
+    width: clamp(100px, 15vw, 600px);
     height: auto;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-.number {
-    font-family: 'Orbitron';
-    font-weight: 500;
-    font-style: normal;
     position:absolute;
-    top: 15px;
-    left: 20px;
-    font-size: 2em;
+    top: 20%;
+    right: 10%;
 }
+
 
 body { background-color: black;}
 
@@ -84,12 +72,11 @@ body { background-color: black;}
     color: azure;
     text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     /* mix-blend-mode: difference;  */
-    font-size: 6vw;
+    font-size: 3vw;
     position: fixed;
-    top: 50%; /* Position from the top edge */
-    left: 50%; /* Position from the left edge */
-    transform: translate(-50%, -50%); /* Center horizontally and vertically */
-    text-align: center;
+    top: 5px; /* Position from the top edge */
+    left: 20px; /* Position from the left edge */
+    text-align: left;
     white-space: nowrap; /* Prevent text from wrapping */
 }
 
